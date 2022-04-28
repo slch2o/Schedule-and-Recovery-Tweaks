@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+
+<!--So that you can override the specific file path targets without changing the one that gets included in git-->
+  <Import Condition="Exists('..\..\poot.targets')" Project="..\..\poot.targets" />
+  <Import Condition="!Exists('..\..\poot.targets')" Project="poot.targets" />
+  
+  <ItemGroup>
+    <EmbeddedResource Include="poot.targets" />
+  </ItemGroup>
+</Project>
