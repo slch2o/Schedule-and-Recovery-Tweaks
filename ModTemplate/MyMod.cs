@@ -13,9 +13,9 @@ namespace ModTemplate
     {
         public static MelonLogger.Instance Logger { get; private set; }
         
-        public const string modName = "Mod Template";
+        public const string modName = "Schedule and Bath Recovery Tweak (BananaPancakes)";
         public const string modVersion = "1.0.0.0";
-        public const string modAuthor = "Gurrenm4";
+        public const string modAuthor = "SuperfluousSteph";
 
         /// <summary>
         /// This code runs automatically as soon as the mod is registered by MelonLoader.
